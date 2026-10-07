@@ -52,3 +52,4 @@ void main(String[] args) {
 //
 //  Runnable es más flexible porque una clase puede implementar
 //  Runnable y además heredar de otra clase.
+//
