@@ -1,11 +1,16 @@
 public class Ejercicio3_1_CuentaBancaria implements Runnable {
+
     int saldo = 0;
+
     @Override
     public void run() {
 
     }
+
     public void depositar(int cantidad) {
-        saldo = saldo + cantidad;
+        synchronized (this) {
+            saldo = saldo + cantidad;
+        }
     }
 }
 
@@ -23,5 +28,13 @@ void main(String[] args) {
         hilo[i].start();
 
     }
+    for (int i = 0; i < 100; i++) {
+        try {
+            hilo[i].join();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     System.out.println("Saldo atual: " + cuentaBancaria.saldo);
 }
