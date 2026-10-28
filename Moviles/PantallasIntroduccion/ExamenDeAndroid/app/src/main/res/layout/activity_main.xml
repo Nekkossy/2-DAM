@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontalTITULO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10123119" />
+
+    <TextView
+        android:id="@+id/TextoTituloExamen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/examen_de_android"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontalTITULO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineSeparacionVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontalDatosDelAlumno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCorreoElectronico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <EditText
+        android:id="@+id/TextoCorreo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/correo_electr_nico"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:background="@android:drawable/editbox_background_normal"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineCorreoElectronico"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMargenVerticalDer"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMargenVerticalIzq"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalDatosDelAlumno" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMargenVerticalIzq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMargenVerticalDer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineSeleccionaRespuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRadioButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineSelecciona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinePreguntaCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4PreguntaDeDesarrollo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.74" />
+
+    <TextView
+        android:id="@+id/Texto1DatosAlumno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_1_datos_del_alumno"
+        android:textColor="#272f7a"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontalDatosDelAlumno"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineSeparacionVertical"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMargenVerticalIzq"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalTITULO" />
+
+    <TextView
+        android:id="@+id/Texto2RespuestaCorrecta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_2_selecciona_la_respuesta_correcta"
+        android:textColor="#272f7a"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineSeleccionaRespuesta"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMargenVerticalDer"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMargenVerticalIzq"
+        app:layout_constraintTop_toTopOf="@+id/guidelineCorreoElectronico" />
+
+    <TextView
+        android:id="@+id/PreguntaRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/qu_componente_se_n_utiliza_para_crear_dise_os_n_flexibles"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineRadioButtons"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineSeparacionVertical"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMargenVerticalIzq"
+        app:layout_constraintTop_toTopOf="@+id/guidelineSeleccionaRespuesta" />
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineRadioButtons"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMargenVerticalDer"
+        app:layout_constraintStart_toStartOf="@+id/guidelineSeparacionVertical"
+        app:layout_constraintTop_toTopOf="@+id/guidelineSeleccionaRespuesta" >
+
+        <RadioButton
+            android:id="@+id/RadioButtonLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/linearlayout" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonConstraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/constraintlayout" />
+
+        <RadioButton
+            android:id="@+id/RadioButtonFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/framelayout" />
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontalDatosDelAlumno"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMargenVerticalDer"
+        app:layout_constraintStart_toStartOf="@+id/guidelineSeparacionVertical"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalTITULO">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nombre_completo1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/Texto3Selecciona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_3_selecciona_todas_las_que_apliquen"
+        android:textColor="#272f7a"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineSelecciona"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMargenVerticalDer"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMargenVerticalIzq"
+        app:layout_constraintTop_toTopOf="@+id/guidelineRadioButtons" />
+
+    <TextView
+        android:id="@+id/PreguntaCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cu_les_son_componentes_de_la_arquitectura_android"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelinePreguntaCheckBox"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMargenVerticalIzq"
+        app:layout_constraintTop_toTopOf="@+id/guidelineSelecciona" />
+
+    <CheckBox
+        android:id="@+id/checkBoxActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/activity"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineCheckBox"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMargenVerticalIzq"
+        app:layout_constraintTop_toTopOf="@+id/guidelinePreguntaCheckBox" />
+
+    <CheckBox
+        android:id="@+id/checkBoxViewModel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/viewmodel"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineCheckBox"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxActivity"
+        app:layout_constraintTop_toTopOf="@+id/guidelinePreguntaCheckBox" />
+
+    <CheckBox
+        android:id="@+id/checkBoxJavaScript"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/javascript"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineCheckBox"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxViewModel"
+        app:layout_constraintTop_toTopOf="@+id/guidelinePreguntaCheckBox" />
+
+    <CheckBox
+        android:id="@+id/checkBoxRepository"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/repository"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineCheckBox"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMargenVerticalDer"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxJavaScript"
+        app:layout_constraintTop_toTopOf="@+id/guidelinePreguntaCheckBox" />
+
+    <TextView
+        android:id="@+id/Texto4PreguntaDeDesarrollo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_4_pregunta_de_desarrollo"
+        android:textColor="#272f7a"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4PreguntaDeDesarrollo"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMargenVerticalDer" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCuadroExplicacionDesarrollo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <EditText
+        android:id="@+id/TextoExplicacionDependency"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/explica_qu_es_dependency_injection"
+        android:inputType="textMultiLine"
+        android:background="@android:drawable/editbox_background_normal"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineCuadroExplicacionDesarrollo"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMargenVerticalDer"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMargenVerticalIzq"
+        app:layout_constraintTop_toTopOf="@+id/guideline4PreguntaDeDesarrollo" />
+
+    <Button
+        android:id="@+id/BotonEnviarExamen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/enviar_examen"
+        android:backgroundTint="#272f7a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMargenVerticalDer"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMargenVerticalIzq"
+        app:layout_constraintTop_toTopOf="@+id/guidelineCuadroExplicacionDesarrollo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

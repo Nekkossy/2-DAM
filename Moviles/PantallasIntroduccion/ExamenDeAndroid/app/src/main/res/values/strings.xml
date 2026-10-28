@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ExamenDeAndroid</string>
+    <string name="examen_de_android">Examen de Android</string>
+    <string name="correo_electr_nico">Correo electrónico</string>
+    <string name="_1_datos_del_alumno">1. Datos del Alumno</string>
+    <string name="nombre_completo">Nombre Completo</string>
+    <string name="_2_selecciona_la_respuesta_correcta">2. Selecciona la respuesta correcta</string>
+    <string name="linearlayout">LinearLayout</string>
+    <string name="constraintlayout">ConstraintLayout</string>
+    <string name="framelayout">FrameLayout</string>
+    <string name="nombre_completo1">Nombre completo</string>
+    <string name="_3_selecciona_todas_las_que_apliquen">3. Selecciona todas las que apliquen</string>
+    <string name="cu_les_son_componentes_de_la_arquitectura_android">¿Cuáles son componentes de la arquitectura Android?</string>
+    <string name="repository">Repository</string>
+    <string name="javascript">JavaScript</string>
+    <string name="viewmodel">ViewModel</string>
+    <string name="activity">Activity</string>
+    <string name="_4_pregunta_de_desarrollo">4. Pregunta de desarrollo</string>
+    <string name="explica_qu_es_dependency_injection">Explica qué es Dependency Injection</string>
+    <string name="enviar_examen">Enviar Examen</string>
+    <string name="qu_componente_se_n_utiliza_para_crear_dise_os_n_flexibles">¿Qué componente se \n utiliza para crear diseños \n flexibles?</string>
+</resources>
