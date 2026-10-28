@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="AdivinaFecha:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AdivinaFecha_jar</output-path>
+    <root id="archive" name="AdivinaFecha.jar">
+      <element id="module-output" name="AdivinaFecha" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,3 @@
+Main-Class: org.example.PruebaQDate
+Class-Path: componenteFecha.jar
+
