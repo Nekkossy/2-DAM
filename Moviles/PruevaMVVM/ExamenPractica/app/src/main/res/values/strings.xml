@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ExamenPracticaReciclerView</string>
+    <string name="gestion_de_alumnos">Gestion de alumnos</string>
+    <string name="lista_de_alumnos">Lista de alumnos</string>
+    <string name="luc_a_lvarez_garc_a">Lucía Álvarez García</string>
+    <string name="_1_dam">1ºDAM</string>
+    <string name="_18_a_os">18 años</string>
+    <string name="lucia_alvarez_iesquevedo_es">lucia.alvarez@iesquevedo.es</string>
+    <string name="la">LA</string>
+    <string name="gesti_n_de_alumnos">Gestión de alumnos</string>
+    <string name="a_adir_alumno">Añadir alumno</string>
+    <string name="lista_de_alumnos_5">Lista de alumnos (5)</string>
+    <string name="borrar_alumno_seleccionado">Borrar alumno seleccionado</string>
+    <string name="nombre">Nombre</string>
+    <string name="nombre_del_alumno">Nombre del alumno</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="alumno_activo">Alumno activo</string>
+    <string name="curso_del_alumno">Curso del alumno</string>
+    <string name="curso">Curso</string>
+    <string name="apellidos_del_alumno">Apellidos del alumno</string>
+    <string name="edad">Edad</string>
+    <string name="edadcaja">Edad</string>
+    <string name="correo_ejemplo_es">correo@ejemplo.es</string>
+    <string name="email">Email</string>
+    <string name="ab">AB</string>
+    <string name="correo_ejemplo_es2">correo@ejemplo.es</string>
+    <string name="_1_dam_18_a_os">1º DAM · 18 años</string>
+</resources>
