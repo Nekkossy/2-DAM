@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gesti_n_de_alumnos"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontalDebajoGestionUsuarios"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalCentral"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVertical2"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalMargen" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a_adir_alumno"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontalFinAñadirAlumno"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalMargenDerecho"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalCentral"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalBotonAñadirAlumnoInicio" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontalDebajoGestionUsuarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVerticalMargen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontalMargen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVerticalCentral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageButton
+        android:id="@+id/imagenGestionAlumnos"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontalDebajoGestionUsuarios"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVertical2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalMargen"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalMargen" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVertical2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontalListaAlumnosAbajo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.14" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lista_de_alumnos_5"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontalListaAlumnosAbajo"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalCentral"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalMargen"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalDebajoGestionUsuarios" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerAlumnos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontalInicioAñadirAlumno"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalMargenDerecho"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalMargen"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalListaAlumnosAbajo" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVerticalMargenDerecho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.99" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontalFinAñadirAlumno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <Button
+        android:id="@+id/buttonDel"
+        android:layout_height="wrap_content"
+        android:text="@string/borrar_alumno_seleccionado"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalMargenDerecho"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalMargen"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalFinAñadirAlumno"
+        android:layout_width="0sp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontalInicioAñadirAlumno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontalBotonAñadirAlumnoInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <TextView
+        android:id="@+id/textoNombre"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal4"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVertical2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalMargen"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalAbajoAñadirAlumno" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontalAbajoAñadirAlumno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <EditText
+        android:id="@+id/edtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre_del_alumno"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal3"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalCentral"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalMargen"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal4"
+        app:layout_constraintVertical_bias="0.285"
+        tools:ignore="SmallSp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.68" />
+
+    <TextView
+        android:id="@+id/textoApellidos"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:text="@string/apellidos"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal4"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalMargenDerecho"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalCentral"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontalAbajoAñadirAlumno" />
+
+    <EditText
+        android:id="@+id/edtApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/apellidos_del_alumno"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal3"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalMargenDerecho"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalCentral"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal4"
+        app:layout_constraintVertical_bias="0.285"
+        tools:ignore="SmallSp" />
+
+    <CheckBox
+        android:id="@+id/chkActivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alumno_activo"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontalBotonAñadirAlumnoInicio"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalMargenDerecho"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalCentral"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal5"
+        android:checked="true"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.79" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <TextView
+        android:id="@+id/textoCurso"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:text="@string/curso"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal6"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalCentral"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalMargen"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal3" />
+
+    <EditText
+        android:id="@+id/edtCurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/curso_del_alumno"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal5"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalCentral"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalMargen"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal6"
+        app:layout_constraintVertical_bias="0.285"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/textoEdad"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:text="@string/edad"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal6"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalMargenDerecho"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalCentral"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal3" />
+
+    <EditText
+        android:id="@+id/edtEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/edadcaja"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal5"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalMargenDerecho"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalCentral"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal6"
+        app:layout_constraintVertical_bias="0.285"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/textoEmail"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal7"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalCentral"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalMargen"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal5" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/correo_ejemplo_es"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontalBotonAñadirAlumnoInicio"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalCentral"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalMargen"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal7"
+        app:layout_constraintVertical_bias="0.285"
+        tools:ignore="SmallSp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.82" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

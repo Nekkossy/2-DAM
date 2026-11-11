@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tres en raya</title>
+</head>
+<body>
+
+<h1>Tres en raya</h1>
+
+<h2>Partida número: <span th:text="${id}"></span></h2>
+
+<h3>Jugadores</h3>
+
+<p th:text="${jugador1}"></p>
+<p th:text="${jugador2}"></p>
+
+<div>
+    <h3>Tablero</h3>
+
+    <h2 th:text="${fila1}"></h2>
+    <h2 th:text="${fila2}"></h2>
+    <h2 th:text="${fila3}"></h2>
+</div>
+
+<div th:if="${!finalizada}">
+
+    <h3>
+        Turno de:
+        <span th:text="${turno}"></span>
+    </h3>
+
+    <p>
+        Su símbolo es:
+        <span th:text="${simboloTurno}"></span>
+    </p>
+
+    <form action="tres" method="post">
+
+        <input type="hidden" name="id" th:value="${id}">
+
+        <label>Introduce una posición del 1 al 9:</label>
+
+        <input type="number"
+               name="posicion"
+               min="1"
+               max="9"
+               required>
+
+        <button type="submit">Jugar</button>
+
+    </form>
+
+</div>
+
+<div th:if="${finalizada}">
+
+    <div th:if="${!empate}">
+
+        <h2>¡Ha ganado!</h2>
+
+        <h3 th:text="${ganador}"></h3>
+
+        <p>
+            Perdedor:
+            <span th:text="${perdedor}"></span>
+        </p>
+
+    </div>
+
+    <div th:if="${empate}">
+        <h2>¡Empate!</h2>
+    </div>
+
+    <p>Partida terminada.</p>
+
+    <a href="inicio">Comenzar otra partida</a>
+
+    <br><br>
+
+    <a href="estadisticas">Ver estadísticas</a>
+
+</div>
+
+</body>
+</html>

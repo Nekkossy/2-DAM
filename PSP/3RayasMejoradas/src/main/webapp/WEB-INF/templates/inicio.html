@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comenzar partida</title>
+</head>
+<body>
+
+<h1>Nuevo tres en raya</h1>
+
+<form action="inicio" method="post">
+
+    <h3>Jugador 1</h3>
+
+    <label>Nombre:</label>
+    <input type="text" name="jugador1" required>
+
+    <label>Símbolo:</label>
+    <input type="text" name="simbolo1" maxlength="1" required>
+
+    <h3>Jugador 2</h3>
+
+    <label>Nombre:</label>
+    <input type="text" name="jugador2" required>
+
+    <label>Símbolo:</label>
+    <input type="text" name="simbolo2" maxlength="1" required>
+
+    <br><br>
+
+    <button type="submit">Comenzar partida</button>
+
+</form>
+
+<hr>
+
+<h2>Estadísticas</h2>
+
+<a href="estadisticas">Ver estadísticas</a>
+
+<hr>
+
+<h2>Eliminar jugador</h2>
+
+<form action="eliminarJugador" method="post">
+
+    <label>Nombre del jugador:</label>
+    <input type="text" name="nombre" required>
+
+    <button type="submit">Eliminar jugador</button>
+
+</form>
+
+</body>
+</html>

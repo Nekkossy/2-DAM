@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Estadísticas</title>
+</head>
+<body>
+
+<h1>Estadísticas del torneo</h1>
+
+<!-- ESTADÍSTICAS GENERALES -->
+
+<div th:if="${tipo == 'general'}">
+
+    <h2>Victorias por jugador</h2>
+
+    <table border="1">
+
+        <tr>
+            <th>Jugador</th>
+            <th>Victorias</th>
+        </tr>
+
+        <tr th:each="resultado : ${resultados}">
+            <td th:text="${resultado.nombre}"></td>
+            <td th:text="${resultado.victorias}"></td>
+        </tr>
+
+    </table>
+
+</div>
+
+<!-- PARTIDAS DE UN JUGADOR -->
+
+<div th:if="${tipo == 'jugador'}">
+
+    <h2>
+        Partidas de
+        <span th:text="${jugador.nombre}"></span>
+    </h2>
+
+    <table border="1">
+
+        <tr>
+            <th>Partida</th>
+            <th>Oponente</th>
+            <th>Símbolo</th>
+            <th>Resultado</th>
+            <th>Movimientos</th>
+        </tr>
+
+        <tr th:each="partida : ${partidasJugador}">
+
+            <td th:text="${partida.id}"></td>
+
+            <td th:text="${partida.getOtroJugador(jugador).nombre}"></td>
+
+            <td th:text="${partida.getSimbolo(jugador)}"></td>
+
+            <td th:text="${!partida.finalizada ? 'En curso' :
+                (partida.empate ? 'Empate' :
+                (partida.ganador == jugador ? 'Victoria' : 'Derrota'))}">
+            </td>
+
+            <td th:text="${partida.movimientos.size()}"></td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+<!-- MOVIMIENTOS DE UNA PARTIDA -->
+
+<div th:if="${tipo == 'movimientos'}">
+
+    <h2>
+        Historial de la partida
+        <span th:text="${partida.id}"></span>
+    </h2>
+
+    <p>
+        Jugadores:
+        <span th:text="${partida.jugador1.nombre}"></span>
+        y
+        <span th:text="${partida.jugador2.nombre}"></span>
+    </p>
+
+    <table border="1">
+
+        <tr>
+            <th>Número de movimiento</th>
+            <th>Jugador</th>
+            <th>Símbolo</th>
+            <th>Posición</th>
+        </tr>
+
+        <tr th:each="movimiento : ${partida.movimientos}">
+
+            <td th:text="${movimiento.numero}"></td>
+            <td th:text="${movimiento.jugador}"></td>
+            <td th:text="${movimiento.simbolo}"></td>
+            <td th:text="${movimiento.posicion}"></td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+<br>
+
+<a href="inicio">Volver al inicio</a>
+
+</body>
+</html>
