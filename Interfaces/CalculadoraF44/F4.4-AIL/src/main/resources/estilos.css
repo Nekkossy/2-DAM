@@ -1,0 +1,76 @@
+.root {
+    -fx-font-family: "Arial";
+}
+
+.fondo {
+    -fx-background-color: #e9e9e9;
+}
+
+.pantalla {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 8;
+    -fx-border-width: 1.5;
+    -fx-font-family: "Arial";
+    -fx-font-size: 30px;
+    -fx-text-fill: #222222;
+    -fx-padding: 12px;
+}
+
+.button {
+    -fx-font-family: "Arial";
+    -fx-font-size: 25px;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-cursor: hand;
+    -fx-border-color: #d0d0d0;
+    -fx-border-width: 1;
+}
+
+.numero {
+    -fx-background-color: white;
+    -fx-text-fill: #222222;
+}
+
+.numero:hover {
+    -fx-background-color: #f2f2f2;
+}
+
+.operacion {
+    -fx-background-color: #c9d9ed;
+    -fx-text-fill: #172b46;
+}
+
+.operacion:hover {
+    -fx-background-color: #b4cce8;
+}
+
+.especial {
+    -fx-background-color: #f5efad;
+    -fx-text-fill: #333333;
+}
+
+.especial:hover {
+    -fx-background-color: #eee49a;
+}
+
+.borrar {
+    -fx-background-color: #e8c2c2;
+    -fx-text-fill: #542727;
+}
+
+.borrar:hover {
+    -fx-background-color: #dcaeae;
+}
+
+.igual {
+    -fx-background-color: #b8dfc5;
+    -fx-text-fill: black;
+    -fx-font-size: 35px;
+    -fx-font-weight: bold;
+}
+
+.igual:hover {
+    -fx-background-color: #9dceb0;
+}
