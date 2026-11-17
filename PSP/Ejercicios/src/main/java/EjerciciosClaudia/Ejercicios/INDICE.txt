@@ -1,0 +1,14 @@
+PAQUETE EJERCICIOS - CONCURRENCIA JAVA
+
+01. ContadorVisitas.java           synchronized, AtomicInteger, join
+02. BancoVirtual.java              ReentrantLock, synchronized
+03. RestauranteConcurrente.java    BlockingQueue, productor-consumidor
+04. ExamenParking.java             Semaphore, colas, barrera prioritaria, dashboard
+05. SistemaDescargas.java          ThreadPoolExecutor, prioridad, CompletableFuture
+06. JuegoSillas.java               BlockingQueue.offer, AtomicBoolean, CountDownLatch
+07. SalidaCarrera.java             CountDownLatch
+08. TrabajoEnFases.java            CyclicBarrier
+09. ProductorConsumidor.java       ArrayBlockingQueue, put, take
+10. CocineroCancelable.java        interrupt, InterruptedException, join
+11. CuentaRegresiva.java           sleep, join
+12. RecursoTryLock.java            ReentrantLock.tryLock

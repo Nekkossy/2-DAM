@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fe8c529-f92c-4833-be04-2d3205faf578" name="Changes" comment="estudiando.." />
+    <list default="true" id="2fe8c529-f92c-4833-be04-2d3205faf578" name="Changes" comment="estudiando un poco más">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,22 +33,22 @@
     &quot;assignee&quot;: &quot;Nekkossy&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Nekkossy/2-DAM.git",
-    "accountId": "54138b74-f957-4b93-943d-ece7eac50cad"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Nekkossy/2-DAM.git&quot;,
+    &quot;accountId&quot;: &quot;54138b74-f957-4b93-943d-ece7eac50cad&quot;
   },
-  "recentNewPullRequestHead": {
-    "server": {
-      "useHttp": false,
-      "host": "github.com",
-      "port": null,
-      "suffix": null
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
     },
-    "owner": "Nekkossy",
-    "repository": "2-DAM"
+    &quot;owner&quot;: &quot;Nekkossy&quot;,
+    &quot;repository&quot;: &quot;2-DAM&quot;
   }
-}]]></component>
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -87,8 +89,10 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/aleja/Desktop/Informatica/2-DAM/PSP/Ejercicios",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -186,6 +190,7 @@
       <workItem from="1794675915135" duration="14616000" />
       <workItem from="1794762163523" duration="22905000" />
       <workItem from="1794852189922" duration="10745000" />
+      <workItem from="1794938256002" duration="2152000" />
     </task>
     <task id="LOCAL-00001" summary="estudiando..">
       <option name="closed" value="true" />
