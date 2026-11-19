@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ExamenPantallasAlejandro</string>
+    <string name="TITLE">TaskMate</string>
+    <string name="button1Text">Todas</string>
+    <string name="hola_usuario">Hola, Ana</string>
+    <string name="TextButton2">Pendientes</string>
+    <string name="TextButton3">Completadas</string>
+    <string name="TextTask1">Estudiar Android XML</string>
+    <string name="hoy_10_00">Hoy - 10:00</string>
+    <string name="hacer_ejercicio">Hacer ejercicio</string>
+    <string name="hoy_18_00">Hoy - 18:00</string>
+    <string name="leer_un_libro">Leer un libro</string>
+    <string name="ma_ana_09_00">Mañana - 09:00</string>
+    <string name="preparar_la_presentacion">Preparar la presentacion</string>
+    <string name="ma_ana_12_00">Mañana - 12:00</string>
+    <string name="hoy_tienes_3_tareas_pendientes">Hoy tienes 3 tareas pendientes</string>
+    <string name="alta">Alta</string>
+    <string name="inicio">Inicio</string>
+</resources>

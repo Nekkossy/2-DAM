@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+
+    <Button
+        android:id="@+id/buttonMenu"
+        style="?attr/materialIconButtonFilledStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:icon="@drawable/icono"
+        app:iconGravity="textStart"
+        app:iconSize="40dp"
+        app:backgroundTint="@color/buttonColor"
+        app:layout_constraintBottom_toTopOf="@+id/filaSuperior"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/TextTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonOptionsTop"
+        style="?attr/materialIconButtonFilledStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:icon="@drawable/icono"
+        app:iconGravity="textStart"
+        app:layout_constraintDimensionRatio="1:1"
+        app:iconSize="40dp"
+        app:backgroundTint="@color/buttonColor"
+        app:layout_constraintBottom_toTopOf="@+id/filaSuperior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSearchTop"
+        style="?attr/materialIconButtonFilledStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:icon="@drawable/icono"
+        app:iconGravity="textStart"
+        app:iconSize="40dp"
+        app:backgroundTint="@color/buttonColor"
+        app:layout_constraintBottom_toTopOf="@+id/filaSuperior"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/buttonOptionsTop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/TextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TITLE"
+        android:textColor="@color/secondaryIcon"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/filaSuperior"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/columnaTitle"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/TextHi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hola_usuario"
+        android:textColor="@color/textoNegro"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/marginStart"
+        app:layout_constraintTop_toTopOf="@+id/filaSuperior" />
+
+    <TextView
+        android:id="@+id/TextNumTareas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hoy_tienes_3_tareas_pendientes"
+        android:textColor="@color/secondaryIcon"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/marginStart"
+        app:layout_constraintTop_toBottomOf="@+id/TextHi" />
+
+    <Button
+        android:id="@+id/buttonEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button1Text"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="14sp"
+        app:backgroundTint="@color/buttonColor"
+        app:cornerRadius="50dp"
+        app:layout_constraintStart_toStartOf="@+id/marginStart"
+        app:layout_constraintTop_toTopOf="@+id/filaBotones" />
+
+    <Button
+        android:id="@+id/buttonPendientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TextButton2"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="14sp"
+        app:backgroundTint="@color/buttonColor"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCompletadas"
+        app:layout_constraintStart_toEndOf="@+id/buttonEditar"
+        app:layout_constraintTop_toTopOf="@+id/filaBotones" />
+
+    <Button
+        android:id="@+id/buttonCompletadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TextButton3"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="14sp"
+        app:backgroundTint="@color/buttonColor"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/marginEnd"
+        app:layout_constraintTop_toTopOf="@+id/filaBotones" />
+
+    <CheckBox
+        android:id="@+id/checkbox_child_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/marginStart"
+        app:layout_constraintTop_toTopOf="@+id/filaCheckbox" />
+
+    <TextView
+        android:id="@+id/TextTask1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TextTask1"
+        android:textColor="@color/textoNegro"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/checkbox_child_1"
+        app:layout_constraintTop_toTopOf="@+id/checkbox_child_1" />
+
+    <TextView
+        android:id="@+id/TextTask1Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hoy_10_00"
+        android:textColor="@color/secondaryIcon"
+        android:textSize="12sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/checkbox_child_1"
+        app:layout_constraintStart_toEndOf="@+id/checkbox_child_1"
+        app:layout_constraintTop_toBottomOf="@+id/TextTask1" />
+
+    <Button
+        android:id="@+id/config1"
+        style="?attr/materialIconButtonFilledStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:backgroundTint="@color/transparent"
+        app:icon="@drawable/icono"
+        app:iconGravity="textStart"
+        app:iconSize="40dp"
+        app:iconTint="@color/secondaryIcon"
+        app:layout_constraintBottom_toBottomOf="@+id/checkbox_child_1"
+        app:layout_constraintDimensionRatio="1:1"
+
+        app:layout_constraintEnd_toStartOf="@+id/marginEnd"
+
+        app:layout_constraintTop_toTopOf="@+id/filaCheckbox" />
+
+    <Button
+        android:id="@+id/prior1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alta"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="10sp"
+        app:backgroundTint="@color/buttonColor"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkbox_child_1"
+        app:layout_constraintEnd_toStartOf="@+id/config1"
+        app:layout_constraintTop_toTopOf="@+id/checkbox_child_1" />
+
+
+
+    <CheckBox
+        android:id="@+id/checkbox_child_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/marginStart"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_child_1" />
+
+    <TextView
+        android:id="@+id/TextTask2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hacer_ejercicio"
+        android:textColor="@color/textoNegro"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/checkbox_child_2"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_child_1" />
+
+    <TextView
+        android:id="@+id/TextTask2Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hoy_18_00"
+        android:textColor="@color/secondaryIcon"
+        android:textSize="12sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/checkbox_child_2"
+        app:layout_constraintStart_toEndOf="@+id/checkbox_child_2"
+        app:layout_constraintTop_toBottomOf="@+id/TextTask2" />
+
+    <Button
+        android:id="@+id/config2"
+        style="?attr/materialIconButtonFilledStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:backgroundTint="@color/transparent"
+        app:icon="@drawable/icono"
+        app:iconGravity="textStart"
+        app:iconSize="40dp"
+        app:iconTint="@color/secondaryIcon"
+        app:layout_constraintBottom_toBottomOf="@+id/checkbox_child_2"
+        app:layout_constraintDimensionRatio="1:1"
+
+        app:layout_constraintEnd_toStartOf="@+id/marginEnd"
+
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_child_1" />
+
+    <Button
+        android:id="@+id/prior2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button1Text"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="10sp"
+        app:backgroundTint="@color/buttonColor"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkbox_child_2"
+        app:layout_constraintEnd_toStartOf="@+id/config1"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_child_1" />
+
+    <CheckBox
+        android:id="@+id/checkbox_child_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/marginStart"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_child_2" />
+
+    <TextView
+        android:id="@+id/TextTask3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/leer_un_libro"
+        android:textColor="@color/textoNegro"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/checkbox_child_3"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_child_2" />
+
+    <TextView
+        android:id="@+id/TextTask3Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ma_ana_09_00"
+        android:textColor="@color/secondaryIcon"
+        android:textSize="12sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/checkbox_child_3"
+        app:layout_constraintStart_toEndOf="@+id/checkbox_child_3"
+        app:layout_constraintTop_toBottomOf="@+id/TextTask3" />
+
+    <Button
+        android:id="@+id/config3"
+        style="?attr/materialIconButtonFilledStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:backgroundTint="@color/transparent"
+        app:icon="@drawable/icono"
+        app:iconGravity="textStart"
+        app:iconSize="40dp"
+        app:iconTint="@color/secondaryIcon"
+        app:layout_constraintBottom_toBottomOf="@+id/checkbox_child_3"
+        app:layout_constraintDimensionRatio="1:1"
+
+        app:layout_constraintEnd_toStartOf="@+id/marginEnd"
+
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_child_2" />
+
+    <Button
+        android:id="@+id/prior3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button1Text"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="10sp"
+        app:backgroundTint="@color/buttonColor"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkbox_child_3"
+        app:layout_constraintEnd_toStartOf="@+id/config1"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_child_2" />
+
+
+    <CheckBox
+        android:id="@+id/checkbox_child_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/marginStart"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_child_3" />
+
+    <TextView
+        android:id="@+id/TextTask4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/preparar_la_presentacion"
+        android:textColor="@color/textoNegro"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/checkbox_child_4"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_child_3" />
+
+    <TextView
+        android:id="@+id/TextTask4Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ma_ana_12_00"
+        android:textColor="@color/secondaryIcon"
+        android:textSize="12sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/checkbox_child_4"
+        app:layout_constraintStart_toEndOf="@+id/checkbox_child_4"
+        app:layout_constraintTop_toBottomOf="@+id/TextTask4" />
+
+    <Button
+        android:id="@+id/config4"
+        style="?attr/materialIconButtonFilledStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:backgroundTint="@color/transparent"
+        app:icon="@drawable/icono"
+        app:iconGravity="textStart"
+        app:iconSize="40dp"
+        app:iconTint="@color/secondaryIcon"
+        app:layout_constraintBottom_toBottomOf="@+id/checkbox_child_4"
+        app:layout_constraintDimensionRatio="1:1"
+
+        app:layout_constraintEnd_toStartOf="@+id/marginEnd"
+
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_child_3" />
+
+    <Button
+        android:id="@+id/prior4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button1Text"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="10sp"
+        app:backgroundTint="@color/buttonColor"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkbox_child_4"
+        app:layout_constraintEnd_toStartOf="@+id/config1"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_child_3" />
+
+
+    <Button
+        android:id="@+id/buttonInicio"
+        style="?attr/materialIconButtonFilledStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:backgroundTint="@color/transparent"
+        app:iconTint="@color/secondaryIcon"
+        app:icon="@drawable/icono"
+        app:iconGravity="textStart"
+        app:iconSize="40dp"
+
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/marginEnd"
+        app:layout_constraintTop_toTopOf="@+id/filaInferior" />
+
+    <Button
+        android:id="@+id/buttonEstadisticas"
+        style="?attr/materialIconButtonFilledStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:backgroundTint="@color/transparent"
+        app:icon="@drawable/icono"
+        app:iconGravity="textStart"
+        app:iconSize="40dp"
+        app:iconTint="@color/secondaryIcon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/buttonInicio"
+        app:layout_constraintStart_toStartOf="@+id/verticalMiddle"
+        app:layout_constraintTop_toTopOf="@+id/filaInferior" />
+
+    <Button
+        android:id="@+id/buttonPerfil"
+        style="?attr/materialIconButtonFilledStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:backgroundTint="@color/transparent"
+        app:iconTint="@color/buttonColor"
+        app:icon="@drawable/icono"
+        app:iconGravity="textStart"
+        app:iconSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+
+        app:layout_constraintStart_toStartOf="@+id/marginStart"
+        app:layout_constraintTop_toTopOf="@+id/filaInferior" />
+
+    <Button
+        android:id="@+id/buttonTareas"
+        style="?attr/materialIconButtonFilledStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:backgroundTint="@color/transparent"
+        app:icon="@drawable/icono"
+        app:iconGravity="textStart"
+        app:iconSize="40dp"
+        app:iconTint="@color/secondaryIcon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+
+        app:layout_constraintEnd_toStartOf="@+id/verticalMiddle"
+        app:layout_constraintStart_toEndOf="@+id/buttonPerfil"
+        app:layout_constraintTop_toTopOf="@+id/filaInferior" />
+
+
+
+
+    <!--    GUIDELINES     -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/filaSuperior"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/columnaTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/marginStart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/marginEnd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalMiddle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/filaBotones"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/filaCheckbox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/filaInferior"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.91" />
+
+    <TextView
+        android:id="@+id/TextInicioButon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inicio"
+        android:textColor="@color/secondaryIcon"
+        android:textSize="12sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonInicio"
+        app:layout_constraintStart_toStartOf="@+id/buttonInicio" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
